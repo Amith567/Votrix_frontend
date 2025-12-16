@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/agent/add/user/success' element={<Success/>}/>
           <Route path='/user/login' element={<UserLogin/>}/>
           <Route path='/voting' element={<Voting/>} />
-          <Route path='/voting/success' element={<Success/>}/>
+          <Route path='/voting/success' element={<VoteSuccess/>}/>
 
         </Routes>
       </BrowserRouter>

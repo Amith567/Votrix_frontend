@@ -1,23 +1,24 @@
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 const Register = () => {
+  const navigate=useNavigate()
   return (
     <>
-    <strong>agent register</strong>
-    <form action="">
-<p>name</p>
-<p>email</p>
-<p>password</p>
-<p>id</p>
-<p>pn number</p>
-<p>role</p>
+      <strong>agent register</strong>
+      <form action="">
+        <p>name</p>
+        <p>email</p>
+        <p>password</p>
+        <p>id</p>
+        <p>pn number</p>
+        <p>role</p>
 
-<input type="submit" value="Register" />
+        <input type="submit" value="Register" onClick={()=>navigate('/agent/login')}/>
 
-    </form>
+      </form>
 
-<Link to='/agent/login'><p> login</p></Link>
-    
+      <p onClick={()=>navigate('/agent/login')}>already logined ? click here</p>
+
     </>
   )
 }

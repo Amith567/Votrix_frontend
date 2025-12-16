@@ -1,7 +1,7 @@
-
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const OfficialLogin = () => {
+  const navigate = useNavigate()
   return (
     <>
       <strong>official login</strong>
@@ -9,7 +9,7 @@ const OfficialLogin = () => {
         <p>username or email</p>
         <p>password</p>
 
-        <Link to='/official/dashboard'><input type="submit" value="Login" /></Link>
+        <input type="submit" value="Login" onClick={() => navigate('/official/dashboard')} />
       </form>
 
     </>
