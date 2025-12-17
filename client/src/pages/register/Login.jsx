@@ -16,7 +16,7 @@ const Login = () => {
       <input type="password" className="w-full rounded-md border px-3 py-2 focus:ring-2 focus:ring-blue-500"/>
     </div>
     <button type='button' className="w-full bg-blue-600 text-white rounded-md py-2 hover:bg-blue-700" onClick={()=>navigate('/agent/add/user')}>Login</button>
-<p className="text-sm text-center mt-4 text-gray-600">New to votrix? <span className="text-blue-600 hover:underline ml-1 cursor-pointer" onClick={()=>navigate('/agent/register')}>Register</span></p>
+<p className="text-sm text-center mt-4 text-gray-600">Not registred? <span className="text-blue-600 hover:underline ml-1 cursor-pointer" onClick={()=>navigate('/agent/register')}>Register</span></p>
   </form>
 </div>
     </>

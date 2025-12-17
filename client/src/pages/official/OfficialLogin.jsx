@@ -43,7 +43,7 @@ const OfficialLogin = () => {
           Forgot password?
           <span className="text-blue-600 hover:underline ml-1 cursor-pointer">
             Click here
-          </span>
+          </span> 
         </p>
       </form>
 
