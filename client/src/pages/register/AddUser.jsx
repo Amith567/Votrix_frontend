@@ -15,17 +15,27 @@ const AddUser = () => {
     e.preventDefault()
     console.log(name,district,state,panchayat,houseno,fingerprint)
     setError('')
-    if (!name || !state){
+    if (!name || !state || !district || !panchayat || !houseno || !fingerprint) {
       setError("All fields is required!.")
       return
     }
     try{
     await axios.post('http://127.0.0.1:8000/api/voters/register/',
     {name:name,house_no:houseno,state:state,district:district,panchayat:panchayat,fingerprint:fingerprint})
-    navigate('/agent/add/user/success')}
-    catch(err){
-      setError('Invalid data!.')
-    }
+    navigate('/agent/add/user/success',{replace:true})}
+ catch (err) {
+  const data = err.response?.data
+
+  if (data?.non_field_errors) {
+    setError(data.non_field_errors[0])
+  } else if (data) {
+    const firstKey = Object.keys(data)[0]
+    setError(data[firstKey][0])
+
+  } else {   
+    setError("Something went wrong. Please try again.")
+  }
+}
   }
   return (
     <>

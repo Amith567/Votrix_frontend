@@ -6,7 +6,7 @@ const Success = () => {
   const [seconds, setSeconds] = useState(5)
   useEffect(() => {
     if (seconds == 0) {
-      navigate(-1)
+      navigate('/agent/add/user')
       return
     }
     const timer = setTimeout(() => {
