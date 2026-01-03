@@ -42,12 +42,12 @@ const AddUser = () => {
           <div className='mb-4 flex gap-4'>
             <div className='flex-1'>
               <label htmlFor="" className='block text-sm font-md'>State</label>
-              <input type="number" name="" className=' no-spinner w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-700' 
+              <input type="text" name="" className=' no-spinner w-full px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-700' 
               onChange={(e)=>setState(e.target.value)} />
             </div>
             <div className='flex-1'>
               <label htmlFor="" className="block text-sm font-md">District</label>
-              <input type="number" name="" className='no-spinner px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-700 w-full' 
+              <input type="text" name="" className='no-spinner px-3 py-2 border rounded-md focus:ring-2 focus:ring-blue-700 w-full' 
               onChange={(e)=>setDistrict(e.target.value)} />
             </div> </div>
 
