@@ -10,6 +10,7 @@ import Success from './pages/register/Success'
 import UserLogin from './pages/vote/UserLogin'
 import Voting from './pages/vote/Voting'
 import VoteSuccess from './pages/vote/VoteSuccess'
+import ApprovalPage from './pages/official/ApprovelPage'
 import './App.css'
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
         <Route path='/official/login' element={<OfficialLogin />} />
         <Route path='/official/dashboard' element={<Official />} />
         <Route path='/official/activity' element={<RecentActivity />} />
-
+        <Route path='/official/approval' element={<ApprovalPage/>}/>
         <Route path='/agent/login' element={<Login />} />
         <Route path='/agent/register' element={<Register />} />
         <Route path='/agent/add/user' element={<AddUser />} />
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/user/login' element={<UserLogin />} />
         <Route path='/voting' element={<Voting />} />
         <Route path='/voting/success' element={<VoteSuccess />} />
+        
       </Routes>
     </BrowserRouter>
   )
