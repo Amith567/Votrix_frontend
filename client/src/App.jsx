@@ -12,6 +12,7 @@ import Voting from './pages/vote/Voting'
 import VoteSuccess from './pages/vote/VoteSuccess'
 import ApprovalPage from './pages/official/ApprovelPage'
 import VoterList from './pages/official/VoterList'
+import ElectionPage from './pages/official/ElectionPage'
 import './App.css'
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/official/activity' element={<RecentActivity />} />
         <Route path='/official/approval' element={<ApprovalPage/>}/>
         <Route path='/official/voters/list' element={<VoterList/>}/>
+        <Route path='/official/election' element={<ElectionPage/>}/>
 
         <Route path='/agent/login' element={<Login />} />
         <Route path='/agent/register' element={<Register />} />
