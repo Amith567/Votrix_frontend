@@ -12,7 +12,7 @@ const UserLogin = () => {
 
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1">
-            Id
+            Username
           </label>
           <input
             type="text"
