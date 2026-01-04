@@ -11,6 +11,7 @@ import UserLogin from './pages/vote/UserLogin'
 import Voting from './pages/vote/Voting'
 import VoteSuccess from './pages/vote/VoteSuccess'
 import ApprovalPage from './pages/official/ApprovelPage'
+import VoterList from './pages/official/VoterList'
 import './App.css'
 
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
         <Route path='/official/dashboard' element={<Official />} />
         <Route path='/official/activity' element={<RecentActivity />} />
         <Route path='/official/approval' element={<ApprovalPage/>}/>
+        <Route path='/official/voters/list' element={<VoterList/>}/>
+
         <Route path='/agent/login' element={<Login />} />
         <Route path='/agent/register' element={<Register />} />
         <Route path='/agent/add/user' element={<AddUser />} />
