@@ -23,10 +23,10 @@ const VoterList = () => {
         <table className="w-full bg-white shadow rounded">
           <thead className="bg-gray-100">
             <tr>
-              <th className="p-2">Name</th>
-              <th className="p-2">Panchayat</th>
-              <th className="p-2">District</th>
-              <th className="p-2">State</th>
+              <th className="p-2 text-left">Name</th>
+              <th className="p-2 text-left">Panchayat</th>
+              <th className="p-2 text-left">District</th>
+              <th className="p-2 text-left">State</th>
             </tr>
           </thead>
           <tbody >
